@@ -10,7 +10,7 @@ OLLAMA_API_URL = "http://localhost:11434/api/generate" # Default Ollama API endp
 # With 32GB RAM, you can comfortably run 7B, 8B, or even 13B parameter models.
 # Your `ollama list` shows `llama3:latest` (4.7GB), which is suitable.
 # We will use this model.
-OLLAMA_MODEL = "llama3.3:latest" # <<< UPDATED based on your `ollama list` output
+OLLAMA_MODEL = "llama3:latest" # <<< UPDATED based on your `ollama list` output
 OLLAMA_REQUEST_TIMEOUT = 240 # Timeout for Ollama API requests in seconds
 
 def ask_question(question_text: str, default_value: str = None, validation_type: str = None) -> str:
